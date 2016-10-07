@@ -1,17 +1,29 @@
 <html ng-app="app">
 	<head>
-		
+		<style>
+			nav ul{
+				list-style: none;
+				
+			}
+			nav ul li{
+				float: left;
+				margin: 20px;
+			}
+			.clearbox{
+				clear: both;
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>app</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#contactus">Contact Us</a></li>
 			</ul>
 		</nav>
-		
+		<div class="clearbox"></div>
 		
 		
 		<ng-view></ng-view>
@@ -22,6 +34,8 @@
 		<script src="node_modules/angular-route/angular-route.js"></script>
 		<script src="app/config.js"></script>
 		<script src="app/route.js"></script>
+		<script src="app/controllers/contactUs.js"></script>
+		<script src="app/controllers/home.js"></script>
 		
 	</body>
 </html>
